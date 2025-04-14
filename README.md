@@ -4,8 +4,7 @@
 
 transportTypeはstdioにしてます。
 
-* 参考をもとに、server.pyにmcp.runを追加
-* uv run server.pyを実行したまま
+* uv run mcp run server.pyを実行したまま
 * cline_mcp_settings.jsonを設定
 * その後task上で python-mcp-example-stdio を認識できるかとか聞くと使い方を教えてくれる。
 * 実行例
@@ -31,6 +30,8 @@ commandのuvはフルパスがいいっぽいです。ここでは`/opt/homebrew
       "args": [
         "--directory",
         "/path/to/server.py/",
+        "run",
+        "mcp",
         "run",
         "server.py"
       ],
